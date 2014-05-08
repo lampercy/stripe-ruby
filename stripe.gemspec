@@ -13,7 +13,6 @@ spec = Gem::Specification.new do |s|
   s.license = 'MIT'
 
   s.add_dependency('rest-client', '>= 1.6.8.rc1', '< 1.8')
-  s.add_dependency('mime-types', '~> 1.25')
   s.add_dependency('json', '~> 1.8.1')
 
   s.add_development_dependency('mocha', '~> 0.13.2')
