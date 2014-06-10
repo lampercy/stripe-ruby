@@ -1,4 +1,11 @@
 source "https://rubygems.org"
 gemspec :path => File.join(File.dirname(__FILE__), "..")
-gem "yajl-ruby"
-gem "activesupport", "~> 3.0"
+
+if RUBY_VERSION < '1.9.3'
+  gem 'rest-client', '~> 1.6.8.rc1'
+  gem 'activesupport', '~> 3.2'
+else
+  gem 'activesupport'
+end
+
+gem 'yajl-ruby'
